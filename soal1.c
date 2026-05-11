@@ -55,7 +55,7 @@ int main () {
         printf("ISOLATED ");
         for (int i = 0; i < N; i ++) {
             if (isolated != 0 && degree[i] == 0) {
-                printf("%d\n", i);
+                printf("%d ", i);
         }
     }
     }
