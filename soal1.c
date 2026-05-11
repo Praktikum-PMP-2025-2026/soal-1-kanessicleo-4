@@ -51,11 +51,13 @@ int main () {
     if (isolated == 0) {
         printf("ISOLATED NONE\n");
     }
-    printf("ISOLATED ");
-    for (int i = 0; i < N; i ++) {
-        if (isolated != 0 && degree[i] == 0) {
-            printf("%d\n", i);
+    else {
+        printf("ISOLATED ");
+        for (int i = 0; i < N; i ++) {
+            if (isolated != 0 && degree[i] == 0) {
+                printf("%d\n", i);
         }
+    }
     }
     return 0;
 }
